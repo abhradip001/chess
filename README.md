@@ -58,12 +58,5 @@ cd server
 npm install
 npm run start
 
-🌐 Frontend
-bash
-Copy
-Edit
-cd client
-npm install
-npm start
-This runs the React frontend on port 3000.
+
 
