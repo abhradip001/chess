@@ -1,15 +1,20 @@
-# ♟️ Multiplayer Chess Game
+# ♟️ Real-Time Multiplayer Chess Game (MERN Stack)
 
-A real-time two-player Chess game with spectator support, built using HTML, CSS, JavaScript, and WebSockets. Designed for an engaging experience where:
-- 🧑‍🤝‍🧑 The **first user** becomes **White**
-- 👤 The **second user** joins as **Black**
-- 👁️‍🗨️ Any additional user becomes a **Spectator**
-
-[🔗 Live Demo](https://abhradip001.github.io/chess/) *(if hosted)*
+This is a real-time multiplayer Chess game with spectator mode built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js) and **Socket.IO** for real-time gameplay. It allows:
+- 🧑‍🤝‍🧑 **Two players** to connect and play (first = White, second = Black)
+- 👁️ **Spectators** to watch the match live
+- ♻️ Full restart/reset capability
+- 🧠 Valid move logic with turn-based control
 
 ---
 
-## 🖼️ Game Screenshots
+## 🔗 Live Demo
+
+Coming soon / [Your deployed URL here]
+
+---
+
+## 🖼️ Screenshots
 
 ### 🎮 Player 1 (White)
 ![Player 1 Screenshot](./assets/player1.png)
@@ -22,37 +27,43 @@ A real-time two-player Chess game with spectator support, built using HTML, CSS,
 
 ---
 
+## 🚀 Tech Stack
+
+| Layer     | Tech                     |
+|-----------|--------------------------|
+| **Frontend** | React.js, chessboard.js |
+| **Backend**  | Node.js, Express.js     |
+| **Database** | MongoDB (optional for logging games/users) |
+| **Realtime** | Socket.IO               |
+
+---
+
 ## ⚙️ Features
 
-- ♟️ Standard chess gameplay rules with legal move enforcement
-- 🔄 Real-time communication between players using WebSockets
-- 👁️ Live board view for spectators
-- 🧠 Built on top of `chess.js` (game logic) and `chessboard.js` (UI)
-- 🧼 Clean, responsive UI with intuitive controls
-- 🔐 Turn-based move locking
+- ♟️ Chess move validation using [`chess.js`](https://github.com/jhlywa/chess.js)
+- 🎯 Two-player real-time gameplay
+- 🔄 Game restart and move tracking
+- 📡 WebSocket-based communication using Socket.IO
+- 👁️ Spectator mode for unlimited viewers
+- 🧼 Clean and responsive React interface
 
 ---
 
-## 🧑‍💻 Technologies Used
+## 🛠️ Installation & Setup
 
-- **Frontend:** HTML5, CSS3, Vanilla JavaScript
-- **Game Logic:** [`chess.js`](https://github.com/jhlywa/chess.js)
-- **Board Rendering:** [`chessboard.js`](https://github.com/oakmac/chessboardjs)
-- **Real-time Communication:** Socket.IO (Node.js WebSocket library)
-
----
-
-## 🚀 Getting Started
-
-### 📦 Prerequisites
-
-- Node.js (for WebSocket server)
-- Git
-
-### 🔧 Setup Instructions
+### ⚙️ Backend
 
 ```bash
-git clone https://github.com/abhradip001/chess.git
-cd chess
+cd server
+npm install
+npm run start
+
+🌐 Frontend
+bash
+Copy
+Edit
+cd client
 npm install
 npm start
+This runs the React frontend on port 3000.
+
